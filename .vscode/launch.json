@@ -1,23 +1,13 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    // https://code.visualstudio.com/docs/editor/variables-reference
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Convert current YAML to live plugin JSON",
-            "type": "node",
+            "name": "Run Extension",
+            "type": "extensionHost",
             "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "autoAttachChildProcesses": true,
-            "runtimeExecutable": "npx",
-            // "program": "node ${workspaceRoot}/node_modules/js-yaml/bin/js-yaml.js",
-            "program": "js-yaml",
-            // "program": "${workspaceFolder}${pathSeparator}node_modules${pathSeparator}.bin${pathSeparator}js-yaml.ps1",
-            "console": "integratedTerminal",
-            "args": ["${file} > ${workspaceFolder}${pathSeparator}dev${pathSeparator}${fileBasenameNoExtension}_TEST.json", 
-            ],
-        }	
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ]
+        }
     ]
 }

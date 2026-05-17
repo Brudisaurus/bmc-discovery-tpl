@@ -1,5 +1,4 @@
-{
-  ".source.tplpre": {
+﻿{
     "_Copyright BMC Copyright": {
       "prefix": "_Copyright_BMC_Copyright_",
       "body": "// INFO: Add current year!\n// (c) Copyright 2019 BMC Software, Inc. All rights reserved.$0",
@@ -1702,4 +1701,3 @@
       "body": "if host.os_class = \"Windows\" then\n\tsep := '\\\\\\';\nelse\n\tsep := '/';\nend if;\n$0"
     }
   }
-}

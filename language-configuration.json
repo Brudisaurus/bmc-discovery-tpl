@@ -1,23 +1,13 @@
 {
     "comments": {
-        // symbol used for single line comment. Remove this entry if your language does not support line comments
-        "lineComment": "//",
-        // symbols used for start and end a block comment. Remove this entry if your language does not support block comments
-        "blockComment": [ "/*", "*/" ]
+        "lineComment": ["//"],
+        "blockComment": ["/*", "*/"]
     },
-	"align_indent": true,
-	"alignment_chars":
-	[
-		":=",
-		"->"
-	],
-    // symbols used as brackets
     "brackets": [
         ["{", "}"],
         ["[", "]"],
         ["(", ")"]
     ],
-    // symbols that are auto closed when typing
     "autoClosingPairs": [
         ["{", "}"],
         ["[", "]"],
@@ -25,7 +15,6 @@
         ["\"", "\""],
         ["'", "'"]
     ],
-    // symbols that can be used to surround a selection
     "surroundingPairs": [
         ["{", "}"],
         ["[", "]"],
@@ -35,13 +24,12 @@
     ],
     "indentationRules": {
         "increaseIndentPattern": "(for).*(\\S+\\s+do)\\b.*$",
-        "decreaseIndentPattern": "(end\\sif;|end\\sfor;)$",
-        "decreaseNextIndentPattern": "^\\s*(pass;|break;)\\b.*$"
-      },
-      "folding": {
+        "decreaseIndentPattern": "(end\\sif;|end\\sfor;)$"
+    },
+    "folding": {
         "markers": {
-          "start": "^\\s*//\\s*#?region\\b",
-          "end": "^\\s*//\\s*#?endregion\\b"
+            "start": "^\\s*//\\s*#?region\\b",
+            "end": "^\\s*//\\s*#?endregion\\b"
         }
-      },
+    }
 }

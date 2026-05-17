@@ -2,7 +2,7 @@
     "name": "bmc-tpl",
     "displayName": "BMC-tpl",
     "description": "BMC TPL (language) Support",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "publisher": "trianglesis",
     "author": {
         "name": "trianglesis"
@@ -68,10 +68,14 @@
         "snippets": [
             {
                 "language": "tplpre",
-                "path": "./snippets/tpl.json"
+                "path": "./snippets/tplpre.json"
             },
             {
                 "language": "tpl",
+                "path": "./snippets/tpl.json"
+            },
+            {
+                "language": "model",
                 "path": "./snippets/tpl.json"
             }
         ]
